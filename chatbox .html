@@ -2,43 +2,30 @@
 <html>
 <head>
 <title>Flat design chat box</title>
+<script src="main.js"></script>
 <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-
 <div class = "chatbox">
 	<div class = "chatlogs">
 		<div class = "chat friend">
 			<div class ="user-photo"><img src = "uone.jpg"></div>
-			<p class="chat-message">Hello all, Share about your place ....</p>
+				<p id = "meg1" class="chat-message"></p>
 		</div>
 		<div class = "chat self">
 			<div class ="user-photo"><img src = "utwo.jpg"></div>
-			<p class="chat-message">Hi, this is vimal, i am in Chennai now.. It's a one of the papular city in India, and it's a main city for IT industry</p>
+			<p id = "meg2" class="chat-message"></p>
 		</div>
-		<div class = "chat friend">
-			<div class ="user-photo"><img src = "uone.jpg"></div>
-			<p class="chat-message">So you belongs to chennai right ?</p>
-		</div>
-		<div class = "chat self">
-			<div class ="user-photo"><img src = "utwo.jpg"></div>
-			<p class="chat-message">No i am here for my job, my native is tirunelveli...</p>
-		</div>
-		<div class = "chat self">
-			<div class ="user-photo"><img src = "utwo.jpg"></div>
-			<p class="chat-message">Hello all, this is saravanan, i am in Ooty now, i am here for my holiday leave trip with my family, and it's a very beautiful place with goog weather condition, This is a perfect time to visit for see different kind of flowers </p>
-		</div>
-		<div class = "chat self">
-			<div class ="user-photo"><img src = "utwo.jpg"></div>
-			<p class="chat-message">Hello guys, i am Leena, now i am in Theni, and i come with my parents to my relative house, Today here will be Full day power cut, So it's really hard to spend here without electricity </p>
-		</div>
-	
 	</div>
-		<div class = "chat-form">
-		<textarea></textarea>
-		<button>send</button>
+		<div class = "chat-form">	
+		<textarea id="words1">Enter comment</textarea>
+		<input type="button" onclick="getwords1()" value="Senduser1"/> <br>
+		
+		
+		<textarea id="words2">Enter comment</textarea>
+		<input type="button" onclick="getwords2()" value="Senduser2" /> <br>
 		</div>
 </div>
-
+<script type="text/javascript" src="main.js"></script>
 </body>
  </html>
